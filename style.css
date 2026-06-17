@@ -37,3 +37,41 @@
     height: 100%;
     object-fit: cover;
 }
+.texto button{
+    color: white;
+    background-color: #c9a86a;
+    font-size: 16px;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 50px;
+}
+.texto button:hover{
+    background-color: #b89658;
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
+}
+.botãoagendar{
+    text-align: center;
+}
+.texto h1{
+    margin: 30px;
+    text-align: left;
+}
+.texto p{
+    font-size: 20px;
+    text-align: left;
+    margin: 30px;
+    max-width: 800px;
+}
+.informacao-localizacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.localzacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}

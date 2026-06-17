@@ -1,5 +1,29 @@
 *{
+
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
+.nossa-trajetoria{
+    display: grid; /*ativando meu grid */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    
+    
+
+}
+
+.fotos-procedimento2{
+    grid-area: 1/1/3/1;
+}
+.fotos-cortando-cabelo-loja{
+    grid-area: 1/2/1/2;
+}
+.fotos-loja{
+    grid-area: 2/2/2/2;
+}
+.nossa-trajetoria img{
+    width: 300px;
+}
+
+

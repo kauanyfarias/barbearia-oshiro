@@ -1,9 +1,32 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-.conteiner-1{
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 8px 16px;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+header img{
+    width: 40px;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+}
+
+header a:hover{
+    font-weight: bolder;
+}
+
+.conteiner-1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,18 +35,23 @@
 }
 
 /* grid das imagens */
-.grid-trajetoria{
+.grid-trajetoria {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Esquerda maior */
-    grid-template-rows: 1fr 1fr; /* duas linhas iguais */
+    grid-template-columns: 2fr 1fr;
+    /* Esquerda maior */
+    grid-template-rows: 1fr 1fr;
+    /* duas linhas iguais */
     gap: 15px;
-    width: 500px; /*tamanho total */
+    width: 500px;
+    /*tamanho total */
 }
 
 /* imagem grande */
-.fotos-procedimento{
-    grid-row: span 2; /* faz ele ocupar duas linhas */
+.fotos-procedimento {
+    grid-row: span 2;
+    /* faz ele ocupar duas linhas */
 }
+
 .fotos-procedimento,
 .cortando-cabelo,
 .fotos-loja {
@@ -32,12 +60,14 @@
     overflow: hidden;
     border-radius: 10px;
 }
-.grid-trajetoria img{
+
+.grid-trajetoria img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.texto button{
+
+.texto button {
     color: white;
     background-color: #c9a86a;
     font-size: 16px;
@@ -47,75 +77,196 @@
     cursor: pointer;
     margin: 50px;
 }
-.texto button:hover{
+
+.texto button:hover {
     background-color: #b89658;
     transform: translateY(-2px);
     transition: all 0.5s ease;
 }
-.botãoagendar{
+
+.botãoagendar {
     text-align: center;
 }
-.texto h1{
+
+.texto h1 {
     margin: 30px;
     text-align: left;
 }
-.texto p{
+
+.texto p {
     font-size: 20px;
     text-align: left;
     margin: 30px;
     max-width: 800px;
 }
 
-.pagina-inicial{
+.pagina-inicial {
     text-align: center;
     margin: 250px;
 }
-body{
+
+body {
     padding: 0 32px;
 }
 
-#localizacao-contatos{
+#localizacao-contatos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#chamada-final{
+#chamada-final {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-#slogan{
-    color:  #d5b981;
+#slogan {
+    color: #d5b981;
 }
 
-#chamada-final article{
+#chamada-final article {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
-.icone-info{
+.icone-info {
     display: flex;
     gap: 12px;
     align-items: center;
 }
 
-.icone-info img{
+.icone-info img {
     width: 40px;
 }
 
-#localizacao-contatos button{
+#localizacao-contatos button {
     background-color: white;
     border: 1px solid #d5b981;
     padding: 8px;
 }
 
-#localizacao-contatos button a{
+#localizacao-contatos button a {
     color: #d5b981;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px; 
+    font-size: 18px;
+}
+
+.espaco-trabalho {
+    display: flex;
+
+}
+
+#foto-espaco {
+    width: 300px;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.nosso-espaco {
+    flex-direction: row;
+    display: flex;
+}
+
+.sobre-espaco {
+    margin: 200px;
+    padding: 10px;
+}
+
+#imagem1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#imagem2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#imagem3 {
+    display: flex;
+    flex-direction: row;
+}
+
+#imagem4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre-espaco h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.corte-maquina {
+    display: inline-block;
+    margin: 55px;
+    padding: 40px;
+    background-color: white;
+    border: solid #c9a86a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.corte-tesoura {
+    display: inline-block;
+    margin: 55px;
+    padding: 40px;
+    background-color: white;
+    border: solid #c9a86a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.barboterapia {
+    display: inline-block;
+    margin: 55px;
+    padding: 40px;
+    background-color: white;
+    border: solid #c9a86a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.finalizar-cachos {
+    display: inline-block;
+    margin: 55px;
+    padding: 40px;
+    background-color: white;
+    border: solid #c9a86a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Procedimentos-quimicos {
+    display: inline-block;
+    margin: 55px;
+    padding: 40px;
+    background-color: white;
+    border: solid #c9a86a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.proguessiva {
+    display: inline-block;
+    margin: 55px;
+    padding: 40px;
+    background-color: white;
+    border: solid #c9a86a;
+    border-radius: 10px;
+    text-align: center;
+}
+.nossos-servicos img{
+    width: 200px;
+    object-fit: cover;
+}
+.nossos-servicos p{
+    font-size: 20px;
+}
+.nossos-servicos h1{
+    text-align: center;
 }

@@ -65,13 +65,57 @@
     margin: 30px;
     max-width: 800px;
 }
-.informacao-localizacao{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+
+.pagina-inicial{
+    text-align: center;
+    margin: 250px;
 }
-.localzacao{
+body{
+    padding: 0 32px;
+}
+
+#localizacao-contatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#chamada-final{
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    gap: 40px;
+}
+
+#slogan{
+    color:  #d5b981;
+}
+
+#chamada-final article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.icone-info{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.icone-info img{
+    width: 40px;
+}
+
+#localizacao-contatos button{
+    background-color: white;
+    border: 1px solid #d5b981;
+    padding: 8px;
+}
+
+#localizacao-contatos button a{
+    color: #d5b981;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; 
 }

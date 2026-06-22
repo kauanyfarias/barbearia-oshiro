@@ -7,7 +7,8 @@
     padding: 0;
     margin: 0;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,17 +17,17 @@ header{
     box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
-header img{
+header img {
     width: 40px;
 }
 
-header a{
+header a {
     color: black;
     text-decoration: none;
     padding: 8px;
 }
 
-header a:hover{
+header a:hover {
     font-weight: bolder;
 }
 
@@ -70,12 +71,13 @@ header a:hover{
     height: 100%;
     object-fit: cover;
 }
-.texto button a{
+
+.texto button a {
     color: white;
     text-decoration: none;
 
 }
-    
+
 .texto button {
     color: white;
     background-color: #c9a86a;
@@ -113,9 +115,6 @@ header a:hover{
     margin: 30px;
     max-width: 800px;
 }
-.body {
-    padding: 0 32px;
-}
 
 #localizacao-contatos {
     display: flex;
@@ -151,11 +150,18 @@ header a:hover{
     width: 40px;
 }
 
+.botao-agendamento2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #localizacao-contatos button {
     background-color: white;
     border: 1px solid #d5b981;
     padding: 10px 10px;
     border-radius: 10px;
+    max-width: 400px;
 }
 
 #localizacao-contatos button a {
@@ -186,7 +192,8 @@ header a:hover{
     margin: 200px;
     padding: 10px;
 }
-.sobre-espaco p{
+
+.sobre-espaco p {
     font-size: 20px;
 }
 
@@ -221,7 +228,7 @@ header a:hover{
     margin: 55px;
     padding: 40px;
     background-color: white;
-    border: solid #c9a86a;
+    border: 1px solid #c9a86a;
     border-radius: 10px;
     text-align: center;
 }
@@ -231,7 +238,7 @@ header a:hover{
     margin: 55px;
     padding: 40px;
     background-color: white;
-    border: solid #c9a86a;
+    border: 1px solid #c9a86a;
     border-radius: 10px;
     text-align: center;
 }
@@ -241,7 +248,7 @@ header a:hover{
     margin: 55px;
     padding: 40px;
     background-color: white;
-    border: solid #c9a86a;
+    border: 1px solid #c9a86a;
     border-radius: 10px;
     text-align: center;
 }
@@ -251,7 +258,7 @@ header a:hover{
     margin: 55px;
     padding: 40px;
     background-color: white;
-    border: solid #c9a86a;
+    border: 1px solid #c9a86a;
     border-radius: 10px;
     text-align: center;
 }
@@ -261,7 +268,7 @@ header a:hover{
     margin: 55px;
     padding: 40px;
     background-color: white;
-    border: solid #c9a86a;
+    border: 1px solid #c9a86a;
     border-radius: 10px;
     text-align: center;
 }
@@ -271,24 +278,28 @@ header a:hover{
     margin: 55px;
     padding: 40px;
     background-color: white;
-    border: solid #c9a86a;
+    border: 1px solid #c9a86a;
     border-radius: 10px;
     text-align: center;
 }
-.nossos-servicos img{
+
+.nossos-servicos img {
     width: 200px;
     object-fit: cover;
 }
-.nossos-servicos p{
+
+.nossos-servicos p {
     font-size: 20px;
 }
-.nossos-servicos h1{
+
+.nossos-servicos h1 {
     text-align: center;
 }
-.pagina-inicial{
+
+.pagina-inicial {
     background-image: url(./imagens/andrea-donato-MNu0n-3BIKs-unsplash.jpg);
     height: 100vh;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -299,28 +310,73 @@ header a:hover{
     color: white;
 
 }
-.pagina-inicial h1{
+
+.pagina-inicial h1 {
     font-size: 100px;
 }
-.pagina-inicial h3{
+
+.pagina-inicial h3 {
     font-size: 50px;
 }
-body{
+
+body {
     margin: 0%;
+    background-color: #f5f3ef;
 }
-.nossos-servicos img{
+
+.nossos-servicos img {
     border-radius: 10px;
 }
-#titulo-servicos{
+
+#titulo-servicos {
     margin: 30px;
     font-family: 'Onefifth', sans-serif;
 }
-.nossos-servicos{
+
+.nossos-servicos {
     margin: 40px;
 }
-.chamada-final button{
+
+.chamada-final button {
     margin: 30px;
 }
-.texto-localização{
+
+.texto-localização {
     font-family: 'Onefifth', sans-serif;
+}
+
+#google-maps {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    width: 550px;
+}
+
+.conteiner-rodape {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: white;
+}
+.unidades h3{
+    color: #d5b981;
+}
+.horarios h3{
+    color: #d5b981;
+}
+.unidades {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.organizar-servicos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

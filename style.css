@@ -200,21 +200,31 @@ header a:hover {
 #imagem1 {
     display: flex;
     flex-direction: row;
+    width: 20px;
+    height: 20px;
 }
 
 #imagem2 {
     display: flex;
     flex-direction: row;
+    width: 20px;
+    height: 20px;
 }
+
 
 #imagem3 {
     display: flex;
     flex-direction: row;
+    width: 20px;
+    height: 20px;
 }
+
 
 #imagem4 {
     display: flex;
     flex-direction: row;
+    width: 20px;
+    height: 20px;
 }
 
 .sobre-espaco h1 {

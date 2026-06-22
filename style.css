@@ -213,10 +213,11 @@ header a:hover {
     font-family: 'Onefifth', sans-serif;
 }
 
+
 .corte-maquina {
     display: inline-block;
     margin: 55px;
-    padding: 40px;
+    padding: 20px;
     background-color: white;
     border: 1px solid #c9a86a;
     border-radius: 10px;
@@ -226,7 +227,7 @@ header a:hover {
 .corte-tesoura {
     display: inline-block;
     margin: 55px;
-    padding: 40px;
+    padding: 20px;
     background-color: white;
     border: 1px solid #c9a86a;
     border-radius: 10px;
@@ -236,7 +237,7 @@ header a:hover {
 .barboterapia {
     display: inline-block;
     margin: 55px;
-    padding: 40px;
+    padding: 20px;
     background-color: white;
     border: 1px solid #c9a86a;
     border-radius: 10px;
@@ -246,7 +247,7 @@ header a:hover {
 .finalizar-cachos {
     display: inline-block;
     margin: 55px;
-    padding: 40px;
+    padding: 20px;
     background-color: white;
     border: 1px solid #c9a86a;
     border-radius: 10px;
@@ -256,7 +257,7 @@ header a:hover {
 .Procedimentos-quimicos {
     display: inline-block;
     margin: 55px;
-    padding: 40px;
+    padding: 20px;
     background-color: white;
     border: 1px solid #c9a86a;
     border-radius: 10px;
@@ -266,7 +267,7 @@ header a:hover {
 .proguessiva {
     display: inline-block;
     margin: 55px;
-    padding: 40px;
+    padding: 20px;
     background-color: white;
     border: 1px solid #c9a86a;
     border-radius: 10px;
@@ -275,6 +276,7 @@ header a:hover {
 
 .nossos-servicos img {
     width: 200px;
+    height: 300px;
     object-fit: cover;
 }
 

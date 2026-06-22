@@ -270,3 +270,8 @@ body {
 .nossos-servicos h1{
     text-align: center;
 }
+
+.botao-agendamento{
+    border-radius: 35px;
+}
+

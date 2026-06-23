@@ -174,22 +174,7 @@ header a:hover {
     width: 300px;
     border-radius: 10px;
     margin: 40px;
-}
 
-
-
-.sobre-espaco {
-    margin: 200px;
-    padding: 10px;
-}
-
-.sobre-espaco p {
-    font-size: 20px;
-}
-
-.confirma {
-    display: flex;
-    flex-direction: row;
 }
 
 .confirma img {
@@ -368,11 +353,7 @@ footer{
     background-color: #fffbe9;
 }
 
-.rodape{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
+
 .agendamento-whatsappa {
     display: flex;
     align-items: center;
@@ -394,9 +375,75 @@ footer{
     color:rgb(252, 121, 34);
     transform: translateY(-2px);
     transition: all 0.5s ease;
+
 }
-.nosso-espaco{
+#foto-espaco img,
+#foto-barbearia img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.nosso-espaco {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 20px;
+    
 }
 
+#foto-espaco,
+#foto-barbearia {
+    width: 30%;
+}
+
+.nosso-espaco div:nth-child(2) {
+    width: 40%;
+}
+.confirma{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.confirma P{
+    font-size: 20px;
+}
+#titulo-espaco {
+    text-align: center;
+    font-family: 'Onefifth', sans-serif;
+}
+.grade-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.rodape {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 40px 20px 20px;
+}
+
+.rodape section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.rodape p,
+.rodape li {
+    color: #ccc;
+    font-size: 14px;
+    list-style: none;
+}
+/* linha de baixo */
+.direitos {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #aaa;
+}

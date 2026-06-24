@@ -29,7 +29,7 @@ header a:hover {
     font-weight: bolder;
 }
 
-.conteiner-1 {
+#sobre {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +38,7 @@ header a:hover {
     flex-direction: row;
 }
 
-.conteiner-1 img{
+#sobre img{
     border-radius: 20px;
 }
 
@@ -248,21 +248,21 @@ header a:hover {
     text-align: center;
 }
 
-.nossos-servicos img {
+#nossos-servicos img {
     width: 200px;
     height: 300px;
     object-fit: cover;
 }
 
-.nossos-servicos p {
+#nossos-servicos p {
     font-size: 20px;
 }
 
-.nossos-servicos h1 {
+#nossos-servicos h1 {
     text-align: center;
 }
 
-.pagina-inicial {
+#pagina-inicial {
     background-image: url(./imagens/andrea-donato-MNu0n-3BIKs-unsplash.jpg);
     height: 100vh;
     background-size: cover;
@@ -290,7 +290,7 @@ body {
     background-color: #f5f3ef;
 }
 
-.nossos-servicos img {
+#nossos-servicos img {
     border-radius: 10px;
 }
 
@@ -299,7 +299,7 @@ body {
     font-family: 'Onefifth', sans-serif;
 }
 
-.nossos-servicos {
+#nossos-servicos {
     margin: 40px;
 }
 
@@ -383,7 +383,7 @@ footer{
     height: auto;
     border-radius: 10px;
 }
-.nosso-espaco {
+#nosso-espaco {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -396,7 +396,7 @@ footer{
     width: 30%;
 }
 
-.nosso-espaco div:nth-child(2) {
+#nosso-espaco div:nth-child(2) {
     width: 40%;
 }
 .confirma{

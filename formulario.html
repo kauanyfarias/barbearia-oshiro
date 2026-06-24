@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="./formulario.css">
+    <link rel="shortcut icon" href="./imagens/logo-oshiro.png" type="image/x-icon">
+</head>
+
+<body>
+
+<header>
+    <img src="./logo-oshiro" alt="Logo Oshiro">
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Serviços</a>
+        <a href="#">Espaço</a>
+        <a href="#">Sobre</a>
+        <a href="#">Agendamento</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Agendar Horário</h1>
+    <p class="subtitulo">Reserve seu horário em poucos passos</p>
+
+    <!-- SERVIÇOS -->
+    <div class="etapa">
+        <span class="numero">1</span>
+        <h2>Escolha o Serviço</h2>
+    </div>
+
+    <div class="servicos">
+        <div class="card ativo">
+            <h3>Corte na máquina</h3>
+            <p>40min</p>
+            <span>R$ 45,00</span>
+        </div>
+
+        <div class="card">
+            <h3>Corte na tesoura</h3>
+            <p>30min</p>
+            <span>R$ 30,00</span>
+        </div>
+
+        <div class="card">
+            <h3>Barboterapia</h3>
+            <p>60min</p>
+            <span>R$ 40,00</span>
+        </div>
+
+        <div class="card">
+            <h3>Finalização de cachos</h3>
+            <p>60min</p>
+            <span>R$ 40,00</span>
+        </div>
+
+        <div class="card">
+            <h3>Botox ou Progressiva</h3>
+            <p>60min</p>
+            <span>R$ 80,00</span>
+        </div>
+    </div>
+
+    <!-- DATAS -->
+    <div class="etapa">
+        <span class="numero">2</span>
+        <h2>Escolha a Data</h2>
+    </div>
+
+    <div class="datas">
+        <button>29/06</button>
+        <button>30/06</button>
+        <button>01/07</button>
+        <button>02/07</button>
+        <button>03/07</button>
+        <button>04/07</button>
+        <button>05/07</button>
+    </div>
+
+    <!-- HORÁRIOS -->
+    <div class="etapa">
+        <span class="numero">3</span>
+        <h2>Escolha o Horário</h2>
+    </div>
+
+    <div class="horarios">
+        <button>09:00</button>
+        <button>09:30</button>
+        <button>10:00</button>
+        <button>10:30</button>
+        <button>11:00</button>
+        <button>14:00</button>
+        <button>15:00</button>
+        <button>16:00</button>
+        <button>17:00</button>
+    </div>
+
+    <!-- DADOS -->
+    <div class="etapa">
+        <span class="numero">4</span>
+        <h2>Seus Dados</h2>
+    </div>
+
+    <div class="formulario">
+        <input type="text" id="nome" placeholder="Seu nome">
+        <input type="text" id="telefone" placeholder="(00) 00000-0000">
+    </div>
+
+    <button id="agendar">Confirmar Agendamento</button>
+
+</div>
+
+<footer class="conteiner-rodape">
+    <section class="unidades">
+        <h3>Unidades</h3>
+        <p>
+            Av. Parada Pinto 586 - Vila Nova Cachoeirinha<br>
+            São Paulo - SP, 02611-002
+        </p>
+    </section>
+
+    <section class="horarios">
+        <h3>Horários</h3>
+        <p>Seg-Sáb - 9h às 19h <br>Dom - fechado</p>
+    </section>
+</footer>
+
+<script src="formulario.js"></script>
+
+</body>
+</html>

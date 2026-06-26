@@ -237,6 +237,7 @@ header a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+
 }
 
 .rodape p,
@@ -244,6 +245,7 @@ header a:hover {
     color: #ccc;
     font-size: 14px;
     list-style: none;
+    text-align: center;
 }
 /* linha de baixo */
 .direitos {

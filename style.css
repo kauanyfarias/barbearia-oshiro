@@ -15,7 +15,7 @@ header {
     box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
     position: fixed;
     width: 100%;
-    
+
 }
 
 header img {
@@ -41,7 +41,7 @@ header a:hover {
     flex-direction: row;
 }
 
-#sobre img{
+#sobre img {
     border-radius: 20px;
 }
 
@@ -94,6 +94,7 @@ header a:hover {
     text-decoration: none;
     font-weight: bold;
 }
+
 .botãoagendar {
     text-align: center;
     color: white;
@@ -116,7 +117,9 @@ header a:hover {
 #localizacao-contatos {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    gap: 20px;
     margin: 30px;
 }
 
@@ -168,15 +171,19 @@ header a:hover {
     font-size: 18px;
 }
 
-.espaco-trabalho {
-    display: flex;
-
+#mapa {
+    width: 40vw
 }
 
-#foto-espaco {
-    width: 300px;
+#mapa iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
     border-radius: 10px;
-    margin: 40px;
+}
+
+.espaco-trabalho {
+    display: flex;
 
 }
 
@@ -190,60 +197,7 @@ header a:hover {
     font-family: 'Onefifth', sans-serif;
 }
 
-
-.corte-maquina {
-    display: inline-block;
-    margin: 55px;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #c9a86a;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.corte-tesoura {
-    display: inline-block;
-    margin: 55px;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #c9a86a;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.barboterapia {
-    display: inline-block;
-    margin: 55px;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #c9a86a;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.finalizar-cachos {
-    display: inline-block;
-    margin: 55px;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #c9a86a;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.Procedimentos-quimicos {
-    display: inline-block;
-    margin: 55px;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #c9a86a;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.proguessiva {
-    display: inline-block;
-    margin: 55px;
+.card-servicos {
     padding: 20px;
     background-color: white;
     border: 1px solid #c9a86a;
@@ -303,7 +257,7 @@ body {
 }
 
 #nossos-servicos {
-    margin: 40px;
+    padding: 40px;
 }
 
 .chamada-final button {
@@ -352,7 +306,7 @@ body {
     margin: 30px;
 }
 
-footer{
+footer {
     background-color: #fffbe9;
 }
 
@@ -362,8 +316,9 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
 .agendamento-whatsappa button {
-    color:#c9a86a;
+    color: #c9a86a;
     font-size: 20px;
     border: none;
     padding: 10px 28px;
@@ -375,53 +330,63 @@ footer{
 }
 
 .agendamento-whatsappa button:hover {
-    color:rgb(252, 121, 34);
+    color: rgb(252, 121, 34);
     transform: translateY(-2px);
     transition: all 0.5s ease;
 
 }
+
 #foto-espaco img,
 #foto-barbearia img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
+
 #nosso-espaco {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    
+    padding: 20px;
 }
 
 #foto-espaco,
 #foto-barbearia {
+    height: 100%;
     width: 30%;
 }
 
 #nosso-espaco div:nth-child(2) {
     width: 40%;
 }
-.confirma{
+
+.confirma {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 20px;
 }
-.confirma P{
+
+.confirma P {
     font-size: 20px;
 }
+
 #titulo-espaco {
     font-size: 20px;
     text-align: center;
     font-family: 'Onefifth', sans-serif;
 }
-.grade-servicos{
+
+.grade-servicos {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
 }
+
 .rodape {
     background-color: #0f0f0f;
     color: #fff;
@@ -441,6 +406,7 @@ footer{
     font-size: 14px;
     list-style: none;
 }
+
 /* linha de baixo */
 .direitos {
     width: 100%;
@@ -451,6 +417,7 @@ footer{
     font-size: 13px;
     color: #aaa;
 }
+
 @media (max-width: 768px) {
 
     /* HEADER */
@@ -488,6 +455,11 @@ footer{
     /* NOSSO ESPAÇO */
     #nosso-espaco {
         flex-direction: column;
+        padding: 10px;
+    }
+
+    #nosso-espaco div:nth-child(2) {
+        order: -1;
     }
 
     #foto-espaco,
@@ -497,9 +469,14 @@ footer{
     }
 
     /* SERVIÇOS */
+    #nossos-servicos {
+        padding: 10px;
+    }
+
     .grade-servicos {
         flex-direction: column;
         align-items: center;
+
     }
 
     .corte-maquina,
@@ -508,8 +485,8 @@ footer{
     .finalizar-cachos,
     .Procedimentos-quimicos,
     .proguessiva {
-        margin: 15px;
-        width: 90%;
+        margin: 0;
+        width: 100%;
     }
 
     #nossos-servicos img {
@@ -523,10 +500,12 @@ footer{
         align-items: center;
     }
 
-    #google-maps {
+    #mapa {
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+    }
+
+    #mapa iframe {
+        height: 250px;
     }
 
     /* TEXTOS */

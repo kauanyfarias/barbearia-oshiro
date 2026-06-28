@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="./formulario.css">
+    <link rel="shortcut icon" href="./imagens/logo-oshiro.png" type="image/x-icon">
+    <!-- ICONES IMPORTADOS DO GOOGLE -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=calendar_today" />
+</head>
+
+<body>
+
+    <header>
+        <img src="./imagens/logo-oshiro.png" alt="Logo Oshiro">
+
+        <nav>
+            <a href="./index.html#pagina-inicial">Inicio</a>
+            <a href="./index.html#nossos-servicos">Serviços</a>
+            <a href="./index.html#nosso-espaco">Espaço</a>
+            <a href="./index.html#sobre">Sobre</a>
+            <a href="./formulario.html">Agendamento</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h1>Agendar Horário</h1>
+        <p class="subtitulo">Reserve seu horário em poucos passos</p>
+
+        <!-- DADOS -->
+        <div class="etapa">
+            <span class="numero">1</span>
+            <h2>Seus Dados</h2>
+        </div>
+
+        <div class="formulario">
+            <input type="text" id="nome" placeholder="Seu nome">
+            <input type="text" id="telefone" placeholder="(00) 00000-0000">
+        </div>
+
+
+        <!-- SERVIÇOS -->
+        <div class="etapa">
+            <span class="numero">2</span>
+            <h2>Escolha o Serviço</h2>
+        </div>
+
+        <div class="servicos">
+            <div class="card ativo">
+                <h3>Corte na máquina</h3>
+                <p>40min</p>
+                <span>R$ 45,00</span>
+            </div>
+
+            <div class="card">
+                <h3>Corte na tesoura</h3>
+                <p>30min</p>
+                <span>R$ 45,00</span>
+            </div>
+
+            <div class="card">
+                <h3>Barboterapia</h3>
+                <p>60min</p>
+                <span>R$ 40,00</span>
+            </div>
+
+            <div class="card">
+                <h3>Finalização de cachos</h3>
+                <p>60min</p>
+                <span>R$ 25,00</span>
+            </div>
+
+            <div class="card">
+                <h3>Procedimentos químicos</h3>
+                <p>80min</p>
+                <span>R$ 100,00</span>
+            </div>
+
+            <div class="card">
+                <h3>Botox ou Progressiva</h3>
+                <p>60min</p>
+                <span>R$ 80,00</span>
+            </div>
+        </div>
+
+        <!-- DATAS -->
+        <div class="etapa">
+            <span class="numero">3</span>
+            <h2>Escolha a Data</h2>
+        </div>
+
+        <div class="datas">
+            <button>
+                <span class="material-symbols-outlined">calendar_today</span> <br>
+                Quarta <br>
+                01/07</button>
+            <button>
+                <span class="material-symbols-outlined">calendar_today</span> <br>
+                Quinta <br>
+                02/07</button>
+            <button>
+                <span class="material-symbols-outlined">calendar_today</span> <br>
+                Sexta <br>
+                03/07</button>
+            <button>
+                <span class="material-symbols-outlined">calendar_today</span> <br>
+                Sabádo <br>
+                04/07</button>
+            <button>
+                <span class="material-symbols-outlined">calendar_today</span> <br>
+                Segunda <br>
+                06/07</button>
+            <button>
+                <span class="material-symbols-outlined">calendar_today</span> <br>
+                Terça <br>
+                07/07</button>
+            <button>
+                <span class="material-symbols-outlined">calendar_today</span> <br>
+                Quarta <br>
+                08/07</button>
+            <button>
+                <span class="material-symbols-outlined">calendar_today</span> <br>
+                Quinta <br>
+                09/07</button>
+        </div>
+
+        <!-- HORÁRIOS -->
+        <div class="etapa">
+            <span class="numero">4</span>
+            <h2>Escolha o Horário</h2>
+        </div>
+
+        <div class="horarios">
+            <button>09:00</button>
+            <button>10:00</button>
+            <button>11:00</button>
+            <button>12:00</button>
+            <button>13:00</button>
+            <button>14:00</button>
+            <button>15:00</button>
+            <button>16:00</button>
+            <button>17:00</button>
+            <button>18:00</button>
+            <button>19:00</button>
+        </div>
+
+        <button id="agendar">Confirmar Agendamento</button>
+
+    </div>
+    <footer class="rodape">
+        <section>
+        <article>
+           <h2>Barbearia Oshiro</h2>
+           <p>Beleza que reflete quem você é. </p>
+        </article>
+            <article class="horarios">
+                <h2>Horários</h2>
+                <ul>
+                    <li>Seg - Sab: 9h - 19h</li>
+                    <li>Dom: Fechado</li>
+                </ul>
+            </article>
+            <article class="contatos">
+                <h2>Redes</h2>
+                <div class="icone-info">
+                    <a href="https://wa.me/5511947018631" target="_blank">
+                        <img src="./imagens/whatsapp.png" alt="Icone Whatsapp">
+                    </a>
+                    <a href="https://www.instagram.com/barbeariaoshiro/" target="_blank">
+                        <img src="./imagens/instagram-logo.png" alt="Icone Instagram">
+                    </a>
+                </div>
+            </article>
+            <div class="direitos">
+                <p>© 2024 Barbearia Oshiro. Todos os direitos reservados.</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="formulario.js"></script>
+
+</body>
+
+</html>

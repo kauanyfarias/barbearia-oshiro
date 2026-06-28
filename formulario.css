@@ -1,0 +1,265 @@
+/* RESET GERAL (remove espaços padrão do navegador) */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    margin-bottom: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+header img {
+    width: 40px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+}
+
+header a:hover {
+    font-weight: bolder;
+}
+
+/* ESTILO GERAL DA PÁGINA */
+body{
+    font-family: Georgia, serif;
+    background:#f8f6f2;
+    color:#111;
+    
+}
+
+/* CONTAINER PRINCIPAL */
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+}
+
+/* TÍTULO */
+h1{
+    font-size:3rem;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.subtitulo{
+    color:#d8b574;
+    font-size:1.5rem;
+    margin-bottom:50px;
+    font-weight:bold;
+}
+
+/* ETAPAS */
+.etapa{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-top:40px;
+    margin-bottom:20px;
+    padding-top:30px;
+    border-top:1px solid #d4d4d4;
+}
+
+.numero{
+    width:40px;
+    height:40px;
+    border:2px solid #d8b574;
+    border-radius:50%;
+    color:#d8b574;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+.etapa h2{
+    font-size:1.5rem;
+    font-weight:normal;
+}
+
+/* SERVIÇOS */
+.servicos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    border:1px solid #d8b574;
+    padding:25px;
+    cursor:pointer;
+    transition:.3s;
+    background:white;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* TEXTO DO CARD */
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.card span{
+    color:#d8b574;
+    font-weight:bold;
+}
+
+/* CARD SELECIONADO */
+.card.ativo{
+    background:#d8b574;
+    color:white;
+}
+
+.card.ativo span,
+.card.ativo p{
+    color:white;
+}
+
+/* DATAS E HORÁRIOS */
+.datas,
+.horarios{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.datas button,
+.horarios button{
+    padding:12px 25px;
+    border:1px solid #d8b574;
+    background:white;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.datas button:hover,
+.horarios button:hover{
+    background:#d8b574;
+    color:white;
+}
+
+/* BOTÃO ATIVO */
+.datas button.ativo,
+.horarios button.ativo{
+    background:#d8b574;
+    color:white;
+}
+
+/* FORMULÁRIO */
+.formulario{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario input{
+    padding:15px;
+    border:none;
+    border-bottom:1px solid #d4d4d4;
+    font-size:1rem;
+    background:transparent;
+}
+
+.formulario input:focus{
+    outline:none;
+    border-bottom:1px solid #d8b574;
+}
+
+/* BOTÃO FINAL */
+#agendar{
+    margin-top:40px;
+    width:100%;
+    padding:18px;
+    background:#d8b574;
+    color:white;
+    border:none;
+    font-size:1.1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#agendar:hover{
+    background:#c7a15c;
+}
+
+/* ICONE DE CALENDARIO */
+.material-symbols-outlined{
+    color: #d8b574;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 8px 16px;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+header img {
+    width: 40px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+}
+
+header a:hover {
+    font-weight: bolder;
+}
+.rodape {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 40px 20px 20px;
+}
+
+.rodape section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.rodape p,
+.rodape li {
+    color: #ccc;
+    font-size: 12px;
+    list-style: none;
+    text-align: center;
+}
+/* linha de baixo */
+.direitos {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #aaa;
+}
+.icone-info img{
+    width: 40px;
+    
+}

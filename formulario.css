@@ -5,29 +5,35 @@
     box-sizing:border-box;
 }
 
-/* CABEÇALHO */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
     padding: 8px 16px;
-    margin-bottom: 50px;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
     position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 1000; /* O HEADER É O ELEMENTO QUE FICA EM CIMA DE TODOS */
 }
 
+/* IMAGEM DO CABEÇALHO */
 header img {
     width: 40px;
 }
 
-header a {
+/* LINK DO NAV */
+header nav .nav-link{
     color: black;
-    text-decoration: none;
     padding: 8px;
+    font-weight: 500;
 }
 
-header a:hover {
+/* LINK DO NAV AO PASSAR O MOUSE */
+header nav .nav-link:hover {
     font-weight: bolder;
+    color: #d5b981;
 }
 
 /* ESTILO GERAL DA PÁGINA */
@@ -35,7 +41,7 @@ body{
     font-family: Georgia, serif;
     background:#f8f6f2;
     color:#111;
-    
+    margin-top: 100px; /* PARA NÃO FICAR POR BAIXO DO HEADER */
 }
 
 /* CONTAINER PRINCIPAL */
@@ -44,6 +50,7 @@ body{
     margin:auto;
     background:#fff;
     padding:40px;
+    margin-top: 100px;
 }
 
 /* TÍTULO */
@@ -228,38 +235,60 @@ header a {
 header a:hover {
     font-weight: bolder;
 }
-.rodape {
+/* RODAPÉ */
+footer {
     background-color: #0f0f0f;
     color: #fff;
-    padding: 40px 20px 20px;
+    padding: 40px;
 }
 
-.rodape section {
+/* DEIXANDO ITENS EM LINHA */
+footer #display-rodape {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
-
+    gap: 32px;
 }
 
-.rodape p,
-.rodape li {
+/* TITULOS DO RODAPÉ */
+h4{
+    font-family: Georgia, sans-serif;
+    font-weight: bold;
+}
+
+/* NOME E SLOGAN */
+footer #nome-slogan{
+    text-align: center;
+}
+
+/* HORARIOS */
+footer #horarios{
+    text-align: center;
+}
+
+/* TIRANDO PADDING DA LISTA */
+footer #horarios ul{
+    padding: 0;
+}
+
+/* TEXTOS DO RODAPÉ */
+footer p,
+footer li {
     color: #ccc;
-    font-size: 12px;
+    font-size: 14px;
     list-style: none;
-    text-align: center;
 }
-/* linha de baixo */
-.direitos {
-    width: 100%;
+
+/* LINK QUE DIRECIONA AS REDES */
+#redes a{
+    color: #ccc;
+    font-size: 30px;
+}
+
+/* DIREITOS RESERVADOS */
+#direitos {
     text-align: center;
-    border-top: 1px solid #333;
-    margin-top: 30px;
     padding-top: 15px;
     font-size: 13px;
     color: #aaa;
-}
-.icone-info img{
-    width: 40px;
-    
 }

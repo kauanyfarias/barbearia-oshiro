@@ -73,7 +73,12 @@ header nav .nav-link:hover {
 #servicos {
     padding: 40px;
 }
-
+.separador-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 /* TÍTULO DA SEÇÃO SERVIÇOS*/
 #servicos h2 {
     font-family: 'Onefifth', sans-serif;
@@ -342,7 +347,6 @@ header nav .nav-link:hover {
     transform: translateY(-6px);
     transition: 0.3s ease-in-out;
 }
-
 /* RODAPÉ */
 footer {
     background-color: #0f0f0f;

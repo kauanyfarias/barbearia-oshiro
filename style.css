@@ -222,7 +222,6 @@ header nav .nav-link:hover {
 /* SEÇÃO DE SOBRE */
 #sobre {
     display: flex;
-    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
@@ -463,6 +462,8 @@ footer li {
     #sobre {
         padding: 16px;
         text-align: center;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
     }
 
     #sobre p{

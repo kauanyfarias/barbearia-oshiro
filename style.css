@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+body {
+    background-color: #f5f3ef;
+}
+
+/* CABEÇALHO */
 header {
     display: flex;
     align-items: center;
@@ -15,25 +20,209 @@ header {
     box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
     position: fixed;
     width: 100%;
-
+    z-index: 1000; /* O HEADER É O ELEMENTO QUE FICA EM CIMA DE TODOS */
 }
 
+/* IMAGEM DO CABEÇALHO */
 header img {
     width: 40px;
 }
 
-header a {
+/* LINK DO NAV */
+header nav .nav-link{
     color: black;
-    text-decoration: none;
     padding: 8px;
+    font-weight: 500;
 }
 
-header a:hover {
+/* LINK DO NAV AO PASSAR O MOUSE */
+header nav .nav-link:hover {
     font-weight: bolder;
+    color: #d5b981;
 }
 
+/* HERO SECTION */
+#pagina-inicial {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./imagens/capa-maquina-de-corte.png); /* DEIXA A IMAGEM MAIS ESCURA */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* TITULO DA HERO SECTION */
+#pagina-inicial h1 {
+    font-family: Georgia, sans-serif;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 80px;
+    color: #d5b981;
+}
+
+#pagina-inicial span#subtitulo {
+    font-size: 50px;
+    color: white;
+}
+
+/* SEÇÃO DE SERVIÇOS */
+#servicos {
+    padding: 40px;
+}
+
+/* TÍTULO DA SEÇÃO SERVIÇOS*/
+#servicos h2 {
+    font-family: 'Onefifth', sans-serif;
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;  
+}
+
+/* POSIÇÃO DE TODOS OS CARDS */
+.grade-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* CARD COM FOTO E TEXTO */
+.card-servico{
+    width: 250px; /* TAMANHO DO CARD */
+    border: 1px solid lightgray;
+    border-radius: 12px 12px 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.card-servico:hover{
+    transition: .3s all;
+    box-shadow: 0 0 10px 4px #d5b981;
+}
+
+/* PARTE DA FOTO */
+.card-servico figure{
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+/* CONFIGURAÇÃO DA IMAGEM */
+.card-servico img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* EFEITO ZOOM NA IMAGEM */
+.card-servico img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* TEXTOS DO CARD */
+.card-servico div{
+    text-align: center;
+    padding: 12px 0;
+}
+
+/* TITULO DO SERVIÇOS */
+.card-servico h3{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 8px;
+}
+
+/* PREÇO DO SERVIÇO */
+.card-servico span{
+    color: #d5b981;
+    font-weight: bold; 
+    font-family: Georgia, serif;
+}
+
+/* SEÇÃO DO ESPAÇO */
+#espaco{
+    padding: 40px;
+}
+
+/* TITULO DE ESPAÇO */
+#espaco h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Onefifth', sans-serif;
+}
+
+/*SUBTITULO SEÇÃO DE SERVIÇOS*/
+#subtitulo-espaco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #d5b981;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* TIRANDO A MARGEM DO TEXTO */
+#subtitulo-espaco p{
+    margin: 0;
+}
+
+/* DISPLAY DAS FOTOS E DO MAPS */
+#fotos-localizacao{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* grid das imagens do espaço*/
+.grid-espaco {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Esquerda maior */
+    grid-template-rows: 1fr 1fr;
+    /* duas linhas iguais */
+    gap: 15px;
+    width: 500px;
+    /*tamanho total */
+}
+
+/* TODAS AS IMAGENS EM GERAL */
+.grid-espaco img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* imagem grande */
+.foto-espaco {
+    grid-row: span 2;
+    /* faz ele ocupar duas linhas */
+}
+
+/* MAPA */
+#mapa {
+    width: 40vw;
+}
+
+#mapa iframe {
+    width: 100%;
+    height: 460px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* SEÇÃO DE SOBRE */
 #sobre {
     display: flex;
+    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
@@ -41,6 +230,22 @@ header a:hover {
     flex-direction: row;
 }
 
+/* TITULO DA SEÇÃO */
+#sobre h2{
+    margin: 30px;
+    font-family: 'Onefifth', sans-serif;
+    font-size: 40px;
+}
+
+/* TEXTO DA SEÇÃO */
+#sobre p{
+    font-size: 20px;
+    text-align: left;
+    margin: 30px;
+    max-width: 800px;
+}
+
+/* TODAS AS IMAGENS DO SOBRE */
 #sobre img {
     border-radius: 20px;
 }
@@ -57,362 +262,141 @@ header a:hover {
     /*tamanho total */
 }
 
-/* imagem grande */
-.fotos-procedimento {
-    grid-row: span 2;
-    /* faz ele ocupar duas linhas */
-}
-
-.fotos-loja {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
+/* TODAS AS FOTOS */
 .grid-trajetoria img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.texto button a {
-    color: white;
-    text-decoration: none;
-
+/* imagem grande */
+.fotos-procedimento {
+    grid-row: span 2;
+    /* faz ele ocupar duas linhas */
 }
 
-.texto button {
-    color: white;
-    background-color: #c9a86a;
-    font-size: 16px;
-    border: none;
-    padding: 10px 28px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 50px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.botãoagendar {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
-.texto h1 {
-    margin: 30px;
-    text-align: left;
-    font-family: 'Onefifth', sans-serif;
-}
-
-.texto p {
-    font-size: 20px;
-    text-align: left;
-    margin: 30px;
-    max-width: 800px;
-}
-
-#localizacao-contatos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 30px;
-}
-
-#chamada-final {
+/* SEÇÃO CHAMADA FINAL */
+#chamada-final{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    margin: 30px;
+    font-family: 'Onefifth', sans-serif;
+    text-align: center;
 }
 
+/* TITULO DE CHAMADA FINAL */
+#chamada-final h2{
+    font-size: 40px;
+}
+
+/* SUBTITULO */
 #slogan {
     color: #d5b981;
 }
 
-#chamada-final article {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+/* GALERIA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.icone-info {
-    display: flex;
-    gap: 12px;
-    align-items: center;
+/* TODAS AS IMAGENS */
+.galeria-item {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* FOTOS QUADRADAS */
 }
 
-.icone-info img {
-    width: 40px;
+/* FOTOS QUE FICAM NO MEIO */
+.fotos-central{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 
-.botao-agendamento2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-#localizacao-contatos button {
+/* BOTÃO DE CHAMADA */
+#chamada-final button {
     background-color: white;
     border: 1px solid #d5b981;
-    padding: 10px 10px;
-    border-radius: 10px;
+    color: #d5b981;
+    font-weight: bold;
+    padding: 10px 16px;
     max-width: 400px;
 }
 
-#localizacao-contatos button a {
-    color: #d5b981;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-#mapa {
-    width: 40vw
-}
-
-#mapa iframe {
-    width: 100%;
-    height: 400px;
-    border: none;
-    border-radius: 10px;
-}
-
-.espaco-trabalho {
-    display: flex;
-
-}
-
-.confirma img {
-    width: 20px;
-}
-
-.sobre-espaco h1 {
-    text-align: center;
-    margin: 20px;
-    font-family: 'Onefifth', sans-serif;
-}
-
-.card-servicos {
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #c9a86a;
-    border-radius: 10px;
-    text-align: center;
-}
-
-#nossos-servicos img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-}
-
-#nossos-servicos p {
-    font-size: 20px;
-}
-
-#nossos-servicos h1 {
-    text-align: center;
-}
-
-#pagina-inicial {
-    background-image: url(./imagens/andrea-donato-MNu0n-3BIKs-unsplash.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+/* BOTÃO DE CHAMADA AO PASSAR O MOUSE */
+#chamada-final button:hover{
+    background-color: #d5b981;
     color: white;
-    flex-direction: column;
+    transform: translateY(-6px);
+    transition: 0.3s ease-in-out;
 }
 
-#pagina-inicial h1 {
-    font-size: 100px;
-}
-
-#pagina-inicial h3 {
-    font-size: 50px;
-}
-
-body {
-    margin: 0%;
-    background-color: #f5f3ef;
-}
-
-#nossos-servicos img {
-    border-radius: 10px;
-}
-
-#titulo-servicos {
-    margin: 30px;
-    font-family: 'Onefifth', sans-serif;
-}
-
-#nossos-servicos {
+/* RODAPÉ */
+footer {
+    background-color: #0f0f0f;
+    color: #fff;
     padding: 40px;
 }
 
-.chamada-final button {
-    margin: 30px;
-}
-
-.texto-localização {
-    font-family: 'Onefifth', sans-serif;
-}
-
-#google-maps {
+/* DEIXANDO ITENS EM LINHA */
+footer #display-rodape {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: end;
-    width: 550px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
-.conteiner-rodape {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px;
-    background-color: white;
-}
-
-.unidades h3 {
-    color: #d5b981;
-}
-
-.horarios h3 {
-    color: #d5b981;
-}
-
-.unidades {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.horarios {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.organizar-servicos {
-    margin: 30px;
-}
-
-footer {
-    background-color: #fffbe9;
-}
-
-
-.agendamento-whatsappa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.agendamento-whatsappa button {
-    color: #c9a86a;
-    font-size: 20px;
-    border: none;
-    padding: 10px 28px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 50px;
-    text-decoration: none;
+/* TITULOS DO RODAPÉ */
+h4{
+    font-family: Georgia, sans-serif;
     font-weight: bold;
 }
 
-.agendamento-whatsappa button:hover {
-    color: rgb(252, 121, 34);
-    transform: translateY(-2px);
-    transition: all 0.5s ease;
-
-}
-
-#foto-espaco img,
-#foto-barbearia img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-#nosso-espaco {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-}
-
-#foto-espaco,
-#foto-barbearia {
-    height: 100%;
-    width: 30%;
-}
-
-#nosso-espaco div:nth-child(2) {
-    width: 40%;
-}
-
-.confirma {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
-
-.confirma P {
-    font-size: 20px;
-}
-
-#titulo-espaco {
-    font-size: 20px;
+/* NOME E SLOGAN */
+footer #nome-slogan{
     text-align: center;
-    font-family: 'Onefifth', sans-serif;
 }
 
-.grade-servicos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+/* HORARIOS */
+footer #horarios{
+    text-align: center;
 }
 
-.rodape {
-    background-color: #0f0f0f;
-    color: #fff;
-    padding: 40px 20px 20px;
+/* TIRANDO PADDING DA LISTA */
+footer #horarios ul{
+    padding: 0;
 }
 
-.rodape section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.rodape p,
-.rodape li {
+/* TEXTOS DO RODAPÉ */
+footer p,
+footer li {
     color: #ccc;
     font-size: 14px;
     list-style: none;
 }
 
-/* linha de baixo */
-.direitos {
-    width: 100%;
+/* LINK QUE DIRECIONA AS REDES */
+#redes a{
+    color: #ccc;
+    font-size: 30px;
+}
+
+/* DIREITOS RESERVADOS */
+#direitos {
     text-align: center;
-    border-top: 1px solid #333;
-    margin-top: 30px;
     padding-top: 15px;
     font-size: 13px;
     color: #aaa;
@@ -427,79 +411,46 @@ footer {
         text-align: center;
     }
 
-    /* HERO (página inicial) */
+    /* TITULO DA HERO */
     #pagina-inicial h1 {
-        font-size: 40px;
+        font-size: 60px;
+        line-height: 50px;
     }
-
-    #pagina-inicial h3 {
-        font-size: 20px;
-    }
-
-    /* SOBRE */
-    #sobre {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .grid-trajetoria {
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .fotos-procedimento {
-        grid-row: auto;
-    }
-
-    /* NOSSO ESPAÇO */
-    #nosso-espaco {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    #nosso-espaco div:nth-child(2) {
-        order: -1;
-    }
-
-    #foto-espaco,
-    #foto-barbearia,
-    #nosso-espaco div:nth-child(2) {
-        width: 100%;
+    
+    #pagina-inicial span#subtitulo {
+        font-size: 28px;
     }
 
     /* SERVIÇOS */
-    #nossos-servicos {
-        padding: 10px;
-    }
-
     .grade-servicos {
-        flex-direction: column;
         align-items: center;
-
     }
 
-    .corte-maquina,
-    .corte-tesoura,
-    .barboterapia,
-    .finalizar-cachos,
-    .Procedimentos-quimicos,
-    .proguessiva {
-        margin: 0;
-        width: 100%;
+    /* CARD COMPLETO */
+    .card-servico{
+        min-width: 350px;
     }
 
-    #nossos-servicos img {
+    #servicos img {
         width: 100%;
         height: auto;
     }
 
-    /* LOCALIZAÇÃO */
-    #localizacao-contatos {
-        flex-direction: column;
-        align-items: center;
+    /* TEXTO DO ENDEREÇO */
+    #subtitulo-espaco p{
+        text-align: center;
     }
 
+    /* NOSSO ESPAÇO */
+    #espaco {
+        padding: 16px;
+    }
+
+    #fotos-localizacao{
+        gap: 16px;
+    }
+
+    /* LOCALIZAÇÃO */
     #mapa {
         width: 100%;
     }
@@ -508,25 +459,29 @@ footer {
         height: 250px;
     }
 
-    /* TEXTOS */
-    .texto p {
-        font-size: 16px;
-        margin: 15px;
-    }
-
-    .texto h1 {
-        font-size: 24px;
+    /* SOBRE */
+    #sobre {
+        padding: 16px;
         text-align: center;
     }
 
-    /* BOTÕES */
-    .texto button {
-        margin: 20px auto;
-        display: block;
+    #sobre p{
+        text-align: center;
+    }
+
+    /* CHAMADA FINAL */
+    /* POSICIONAMENTO DAS FOTOS */
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* RETIRANDO A FOTOS CENTRAIS */
+    .fotos-central{
+        display: none;
     }
 
     /* RODAPÉ */
-    .rodape section {
+    footer #display-rodape{
         flex-direction: column;
         text-align: center;
         align-items: center;

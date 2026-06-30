@@ -43,6 +43,18 @@ body{
     color:#111;
     margin-top: 100px; /* PARA NÃO FICAR POR BAIXO DO HEADER */
 }
+/* deixando as datas em preto  */
+.datas span{
+    color: black;
+}
+/* deixando os horarios em preto */
+.horarios button{
+    color: black;
+}
+h1,h2,h3,span{
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
 
 /* CONTAINER PRINCIPAL */
 .container{
@@ -100,6 +112,7 @@ h1{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
+    
 }
 
 .card{
@@ -108,6 +121,8 @@ h1{
     cursor:pointer;
     transition:.3s;
     background:white;
+    border-radius: 0%;
+    border: solid 5px black;
 }
 
 .card:hover{
@@ -291,4 +306,19 @@ footer li {
     padding-top: 15px;
     font-size: 13px;
     color: #aaa;
+}
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    /* RODAPÉ */
+    footer #display-rodape{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }

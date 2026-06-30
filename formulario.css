@@ -44,7 +44,7 @@ body{
     margin-top: 100px; /* PARA NÃO FICAR POR BAIXO DO HEADER */
 }
 /* deixando as datas em preto  */
-.datas span{
+.datas button{
     color: black;
 }
 /* deixando os horarios em preto */

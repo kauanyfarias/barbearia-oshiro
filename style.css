@@ -44,6 +44,7 @@ header nav .nav-link:hover {
 /* HERO SECTION */
 #pagina-inicial {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./imagens/capa-maquina-de-corte.png); /* DEIXA A IMAGEM MAIS ESCURA */
+    
     background-color: black;
     height: 100vh;
     background-size: cover;
@@ -52,7 +53,8 @@ header nav .nav-link:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; 
+
 }
 
 /* TITULO DA HERO SECTION */
@@ -61,7 +63,7 @@ header nav .nav-link:hover {
     font-weight: bold;
     font-size: 120px;
     line-height: 80px;
-    color: #d5b981;  
+    color: #d5b981;
 }
 
 #pagina-inicial span#subtitulo {

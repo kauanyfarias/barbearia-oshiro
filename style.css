@@ -49,7 +49,6 @@ header nav .nav-link:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: fixed; /* teste para fixar imagem do fundo */
     display: flex;
     justify-content: center;
     align-items: center;

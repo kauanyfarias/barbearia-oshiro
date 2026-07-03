@@ -16,7 +16,7 @@ body {
 #pagina-inicial {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./imagens/capa-maquina-de-corte.png); /* DEIXA A IMAGEM MAIS ESCURA */
     background-color: black;
-    height: 100vh;
+    height: 97vh;
     padding-top: 66px;
     background-size: cover;
     background-position: center;

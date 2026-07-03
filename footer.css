@@ -1,0 +1,155 @@
+/* RODAPÉ */
+footer {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 40px;
+}
+
+/* DEIXANDO ITENS EM LINHA */
+#display-rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.divisao-rodape {
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITULOS DO RODAPÉ */
+h4{
+    font-family: Georgia, sans-serif;
+    font-weight: bold;
+}
+
+h4 span {
+    color: #d5b981;
+}
+
+/* NOME E SLOGAN */
+#nome-slogan img {
+    width: 60px;
+    margin-bottom: 8px;
+}
+
+/* HORARIOS */
+#horarios-redes{
+    text-align: center;
+}
+
+.container-horarios-redes {
+    min-width: 70%;
+}
+
+/* TIRANDO PADDING DA LISTA */
+#horarios-redes ul{
+    padding: 0;
+}
+
+/* TEXTOS DO RODAPÉ */
+footer p,
+footer li {
+    color: #fff;
+    font-size: 14px;
+    list-style: none;
+}
+
+#online-info {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #d5b981;
+}
+
+#online-info i {
+    transform: translateY(-1px);
+}
+
+/* LINK QUE DIRECIONA AS REDES */
+.rede {
+    margin-bottom: 8px;
+}
+
+.link-redes {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+
+
+.link-redes i {
+    font-size: 30px;
+}
+
+.link-redes i::before {
+    transform: translateY(5px);
+}
+
+.link-redes:hover {
+    color: #d5b981;
+}
+
+.mapa-rodape {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.btn-rodape {
+    width: 100%;
+    margin-top: 8px;
+    background-color: black;
+    border: 1px solid #d5b981;
+    color: #d5b981;
+    font-weight: bold;
+    padding: 10px 16px;
+}
+
+.btn-rodape:hover {
+    background-color: #d5b981;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+/* DIREITOS RESERVADOS */
+#direitos {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.online::before {
+    color: green;
+    animation: pulsar 2s ease-in-out infinite;
+}
+
+.offline::before {
+    color: red;
+    animation: pulsar 2s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1) translateY(-1px);
+    }
+
+    50% {
+        transform: scale(1.2) translateY(-1px);
+    }
+}
+
+
+
+@media (max-width: 810px) {
+    /* RODAPÉ */
+    #display-rodape{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}

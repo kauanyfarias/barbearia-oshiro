@@ -1,0 +1,92 @@
+@import url('https://fonts.cdnfonts.com/css/onefifth');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    background-color: #f5f3ef;
+    font-family: 'Onefifth', sans-serif;
+}
+
+/* SEÇÃO DE SERVIÇOS */
+#servicos {
+    padding: 40px;
+}
+.separador-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+/* TÍTULO DA SEÇÃO SERVIÇOS*/
+#servicos h2 {
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;  
+}
+
+/* POSIÇÃO DE TODOS OS CARDS */
+.grade-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* CARD COM FOTO E TEXTO */
+.card-servico{
+    width: 250px; /* TAMANHO DO CARD */
+    border: 1px solid lightgray;
+    border-radius: 12px 12px 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.card-servico:hover{
+    transition: .3s all;
+    box-shadow: 0 0 10px 4px #d5b981;
+}
+
+/* PARTE DA FOTO */
+.card-servico figure{
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+/* CONFIGURAÇÃO DA IMAGEM */
+.card-servico img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* EFEITO ZOOM NA IMAGEM */
+.card-servico img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* TEXTOS DO CARD */
+.card-servico div{
+    text-align: center;
+    padding: 12px 0;
+}
+
+/* TITULO DO SERVIÇOS */
+.card-servico h3{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 8px;
+}
+
+/* PREÇO DO SERVIÇO */
+.card-servico span{
+    color: #d5b981;
+    font-weight: bold; 
+    font-family: Georgia, serif;
+}

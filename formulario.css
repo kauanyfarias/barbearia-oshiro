@@ -1,14 +1,20 @@
-/* RESET GERAL (remove espaços padrão do navegador) */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+@import url('https://fonts.cdnfonts.com/css/onefifth');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     user-select: none;
+}
+
+body {
+    background-color: #f5f3ef;
+    font-family: 'Onefifth', sans-serif;
 }
 
 /* ESTILO GERAL DA PÁGINA */
 body{
-    font-family: Georgia, serif;
     background:#f8f6f2;
     color:#111;
     margin-top: 100px; /* PARA NÃO FICAR POR BAIXO DO HEADER */

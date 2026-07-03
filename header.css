@@ -60,3 +60,13 @@ header ul {
 .link-nav:hover::before {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

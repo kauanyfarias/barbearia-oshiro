@@ -10,7 +10,6 @@
 
 body {
     background-color: #f5f3ef;
-    font-family: 'Onefifth', sans-serif;
 }
 
 /* ESTILO GERAL DA PÁGINA */
@@ -28,7 +27,6 @@ body{
     color: black;
 }
 h1,h2,h3,span{
-    font-family: Georgia, serif;
     font-weight: bold;
 }
 
@@ -202,77 +200,4 @@ h1{
 /* ICONE DE CALENDARIO */
 .material-symbols-outlined{
     color: #d8b574;
-}
-
-/* RODAPÉ */
-footer {
-    background-color: #0f0f0f;
-    color: #fff;
-    padding: 40px;
-}
-
-/* DEIXANDO ITENS EM LINHA */
-footer #display-rodape {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 32px;
-}
-
-/* TITULOS DO RODAPÉ */
-h4{
-    font-family: Georgia, sans-serif;
-    font-weight: bold;
-}
-
-/* NOME E SLOGAN */
-footer #nome-slogan{
-    text-align: center;
-}
-
-/* HORARIOS */
-footer #horarios{
-    text-align: center;
-}
-
-/* TIRANDO PADDING DA LISTA */
-footer #horarios ul{
-    padding: 0;
-}
-
-/* TEXTOS DO RODAPÉ */
-footer p,
-footer li {
-    color: #ccc;
-    font-size: 14px;
-    list-style: none;
-}
-
-/* LINK QUE DIRECIONA AS REDES */
-#redes a{
-    color: #ccc;
-    font-size: 30px;
-}
-
-/* DIREITOS RESERVADOS */
-#direitos {
-    text-align: center;
-    padding-top: 15px;
-    font-size: 13px;
-    color: #aaa;
-}
-@media (max-width: 768px) {
-
-    /* HEADER */
-    header {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-    /* RODAPÉ */
-    footer #display-rodape{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
 }

@@ -1,0 +1,112 @@
+@import url('https://fonts.cdnfonts.com/css/onefifth');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap');
+
+:root {
+    --font-cliente: 'Lora', serif;
+    --font-texto: 'Inter', Arial, sans-serif;
+    --font-titulo: 'Onefifth', sans-serif;
+
+    --branco-1: #FAF7F0;
+    --branco-2: #EFE7DA;
+    --branco-3: #D8CEC0;
+
+    --preto-1: #2A2926;
+    --preto-2: #171615;
+    --preto-3: #0F0E0D;
+
+    --amarelo-1: #F1C95A;
+    --amarelo-2: #D8A928;
+    --amarelo-3: #A87817;
+}
+
+:root,
+[data-theme="light"] {
+    --color-page: var(--branco-1);
+    --color-surface: var(--branco-1);
+    --color-surface-soft: var(--branco-2);
+    --color-border: var(--branco-3);
+
+    --color-text: var(--preto-2);
+    --color-text-soft: var(--preto-1);
+    --color-text-inverse: var(--branco-1);
+    --color-text-hero: var(--branco-1);
+
+    --color-brand: var(--amarelo-2);
+    --color-brand-soft: var(--amarelo-1);
+    --color-brand-strong: var(--amarelo-3);
+
+    --color-header: var(--branco-1);
+    --color-footer: var(--preto-1);
+    --color-footer-text: var(--branco-1);
+
+    --color-hero: var(--preto-3);
+    --color-hero-overlay: rgb(15 14 13 / 0.56);
+
+    --color-container: rgba(255, 255, 255, 0.8);
+
+    --shadow-soft: 0 8px 24px rgb(15 14 13 / 0.12);
+    --shadow-header: 0 4px 18px rgb(15 14 13 / 0.18);
+    --shadow-brand: 0 0 0 3px rgb(216 169 40 / 0.24);
+
+    --filter-logo: invert(0);
+}
+
+[data-theme="dark"] {
+    --color-page: var(--preto-3);
+    --color-surface: var(--preto-2);
+    --color-surface-soft: var(--preto-1);
+    --color-border: var(--preto-1);
+
+    --color-text: var(--branco-1);
+    --color-text-soft: var(--branco-3);
+    --color-text-inverse: var(--preto-3);
+    --color-text-hero: var(--branco-1);
+
+    --color-brand: var(--amarelo-2);
+    --color-brand-soft: var(--amarelo-1);
+    --color-brand-strong: var(--amarelo-3);
+
+    --color-header: var(--preto-2);
+    --color-footer: var(--preto-3);
+    --color-footer-text: var(--branco-1);
+
+    --color-hero: var(--preto-3);
+    --color-hero-overlay: rgb(15 14 13 / 0.72);
+
+    --color-container: rgba(0, 0, 0, 0.8);
+
+    --shadow-soft: 0 8px 24px rgb(15 14 13 / 0.36);
+    --shadow-header: 0 4px 18px rgb(15 14 13 / 0.48);
+    --shadow-brand: 0 0 0 3px rgb(216 169 40 / 0.30);
+
+    --filter-logo: invert(1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-text); 
+    font-family: var(--font-cliente);
+    font-weight: 700;
+}
+
+p,
+li,
+a,
+span,
+input,
+button {
+    font-family: var(--font-texto);
+}

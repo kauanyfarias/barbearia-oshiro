@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Oshiro</title>
+    <link rel="shortcut icon" href="./imagens/logo-oshiro-branca.png" type="image/x-icon">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- ÍCONES DO BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- ÍCONES DO GOOGLE -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./root.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./footer.css">
-    <link rel="shortcut icon" href="./imagens/logo-oshiro-branca.png" type="image/x-icon">
-
-    <!-- IMPORTAÇÃO DE BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- IMPORTAÇÃO DE ICONES DO BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- IMPORTAÇÃO DE ICONES DO GOOGLE -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
-
-    <!-- IMPORTAÇÃO DO AOS -->
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <a href="#">
             <img src="./imagens/logo-oshiro-preta.png" alt="Logo Oshiro">
-        </a>        
+        </a>
         <nav>
             <ul>
                 <li>
-                  <a class="link-nav ativa" href="#">Início</a>
+                    <a class="link-nav ativa" href="#">Início</a>
                 </li>
                 <li>
-                  <a class="link-nav" href="./servicos.html">Serviços</a>
+                    <a class="link-nav" href="./servicos.html">Serviços</a>
                 </li>
                 <li>
                     <a class="link-nav" href="./sobre.html">Sobre</a>
@@ -40,121 +43,137 @@
                 <li>
                     <a class="link-nav" href="./formulario.html">Agendamento</a>
                 </li>
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </li>
             </ul>
-        </nav>   
+        </nav>
     </header>
 
     <main>
-        <section id="pagina-inicial">
-            <img src="./imagens/logo-oshiro-branca.png" alt="Logo Oshiro">
-            <div id="titulo-hero">
-                <span id="subtitulo">BARBEARIA</span>
+        <section id="pagina-inicial" data-aos="fade-down" data-aos-duration="100">
+            <img src="./imagens/logo-oshiro-branca.png" alt="Logo Oshiro" data-aos="fade-right" data-aos-delay="100">
+            <div id="titulo-hero" data-aos="fade-right" data-aos-delay="200">
+                <span id="subtitulo">
+                    BARBEARIA
+                </span>
                 <h1>
                     OSHIRO
                 </h1>
             </div>
+
+            <!-- BOTÃO -->
+            <button id="btn-formulario-inicial" class="btn-formulario"
+                onclick="window.location.href='./formulario.html'" data-aos="fade-up" data-aos-delay="300">
+                Faça seu agendamento
+            </button>
         </section>
 
-        <section id="espaco">
-            <h2> Nosso Espaço </h2>
-            <div id="subtitulo-espaco">
-                <span class="material-symbols-outlined">location_on</span>
-                <p>Av. Parada Pinto, 586 - Vila Nova Cachoeirinha, São Paulo - SP, 02611-002</p>
-            </div>
-            <div id="fotos-localizacao">
-                <article class="grid-espaco">
-                    <div class="foto-espaco">
-                        <img src="./imagens/Espaço-de-trabalho.jpeg" alt="Espaço da barbearia">
-                    </div>
-                    <div class="foto-espaco-menor">
-                        <img src="./imagens/barbearia.jpeg" alt="Espaço da barbearia">
-                    </div>
-                    <div class="foto-loja">
-                        <img src="./imagens/logo-da-loja.jpeg" alt="loja">
-                    </div>
-                </article>
-                <div id="mapa">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234224.26328735746!2d-46.95284591328125!3d-23.46933229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef76441cd40b7%3A0x81a10795d282b219!2sBarbearia%20tokyo%20cabeleireiros!5e0!3m2!1spt-BR!2sbr!4v1781699661440!5m2!1spt-BR!2sbr"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre">
-            <div class="grid-trajetoria">
-                <div class="fotos-procedimento">
-                    <img src="./imagens/procedimento.jpeg" alt="procedimento">
-                </div>
-
-                <div>
-                    <img src="./imagens/david-cortando-cabelo.jpeg" alt="corte">
-                </div>
-
-                <div>
-                    <img src="./imagens/trajetoria-amigo-david.jpeg" alt="loja">
-                </div>
-            </div>
-            <div>
-                <h2>
-                    Nossa trajetória desde 1987:
-                    <br> Transformando cortes em estilo
-                </h2>
-                <p>
-                    Ao longo dos anos, construímos nossa história com dedicação, profissionalismo e
-                    confiança,
-                    conquistando clientes que setornaram parte da nossa jornada. Seguimos evoluindo
-                    constantemente,
-                    investindo em conhecimento, inovação e excelência, sempre com o objetivo de oferecer os
-                    melhores
-                    serviços e manter a tradição da barbearia aliada às necessidades do homem moderno.
-                </p>
-            </div>
-        </section>
-
-        <section id="chamada-final">
+        <section id="chamada">
             <!-- TITULO E SUBTITULO -->
             <div>
-                <h2>Tranforme seu visual hoje mesmo!</h2>
-                <p id="slogan">Beleza que reflete quem você é. Babearia Oshiro - experiências criadas para elevar o seu bem-estar.</p>
+                <h2 data-aos="fade-right">Tranforme seu visual hoje mesmo!</h2>
+                <p id="slogan" data-aos="fade-left">Beleza que reflete quem você é. Babearia Oshiro - experiências criadas para elevar o seu bem-estar.</p>
             </div>
-           
+
             <!-- GALERIA DE FOTOS -->
-            <div class="galeria">
+            <div id="galeria">
                 <!-- FOTO GRANDE -->
-                <div class="galeria-item grande">
+                <div class="galeria-item grande" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
                     <img src="./imagens/galeria/barbeiros.jpg" alt="Corte de cabelo 2">
                 </div>
-        
+
                 <!-- FOTOS PEQUENOS -->
                 <div class="fotos-central">
-                    <div class="galeria-item pequeno">
+                    <div class="galeria-item pequeno" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
                         <img src="./imagens/galeria/barba.jpg" alt="Corte de cabelo 4">
                     </div>
-                    <div class="galeria-item pequeno">
+                    <div class="galeria-item pequeno" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
                         <img src="./imagens/galeria/corte-lateral.jpg" alt="Corte de cabelo 5">
                     </div>
-                    <div class="galeria-item pequeno">
+                    <div class="galeria-item pequeno" data-aos="fade-left" data-aos-anchor-placement="top-bottom">
                         <img src="./imagens/galeria/botox.jpeg" alt="Corte de cabelo 6">
                     </div>
-                    <div class="galeria-item pequeno">
+                    <div class="galeria-item pequeno" data-aos="fade-left" data-aos-anchor-placement="top-bottom">
                         <img src="./imagens/galeria/mullet.jpg" alt="Corte de cabelo 7">
                     </div>
                 </div>
 
                 <!-- FOTO GRANDE -->
-                <div class="galeria-item grande">
+                <div class="galeria-item grande" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
                     <img src="./imagens/galeria/corte-tesoura.jpg" alt="Corte de cabelo 1">
                 </div>
             </div>
 
             <!-- BOTÃO -->
-            <button onclick="window.location.href='./formulario.html'">
+            <button class="btn-formulario" onclick="window.location.href='./formulario.html'" data-aos="fade-down">
                 Faça seu agendamento
             </button>
-           
+        </section>
+
+        <section id="espaco">
+            <h2 data-aos="fade-right"> Nosso Espaço </h2>
+            <div id="subtitulo-espaco" data-aos="fade-left">
+                <span class="material-symbols-outlined">location_on</span>
+                <p>Av. Parada Pinto, 586 - Vila Nova Cachoeirinha, São Paulo - SP, 02611-002</p>
+            </div>
+            <div id="fotos-localizacao">
+                <article class="grid-espaco">
+                    <div class="foto-espaco" id="foto-espaco-1" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+                        <img src="./imagens/Espaco-de-trabalho.jpeg" alt="Espaço da barbearia">
+                    </div>
+                    <div class="foto-espaco-menor" id="foto-espaco-2" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom">
+                        <img src="./imagens/barbearia.jpeg" alt="Espaço da barbearia">
+                    </div>
+                    <div class="foto-espaco-menor" id="foto-espaco-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <img src="./imagens/logo-da-loja.jpeg" alt="loja">
+                    </div>
+                </article>
+                <div id="mapa" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234224.26328735746!2d-46.95284591328125!3d-23.46933229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef76441cd40b7%3A0x81a10795d282b219!2sBarbearia%20tokyo%20cabeleireiros!5e0!3m2!1spt-BR!2sbr!4v1781699661440!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- BOTÃO -->
+            <button class="btn-formulario" onclick="window.location.href='./formulario.html'" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom">
+                Faça seu agendamento
+            </button>
+        </section>
+
+        <section id="sobre">
+            <article id="container-sobre">
+                <div class="texto-sobre">
+                    <h2 data-aos="fade-down">
+                        Nossa trajetória desde 1987:
+                        <br> Transformando cortes em estilo
+                    </h2>
+                    <p data-aos="fade-down">
+                        Ao longo dos anos, construímos nossa história com dedicação, profissionalismo e confiança,
+                        conquistando clientes que setornaram parte da nossa jornada...
+                    </p>
+
+                    <button class="btn-sobre" onclick="window.location.href='./sobre.html'" data-aos="fade-down">
+                        Saiba mais sobre nós
+                    </button>
+                </div>
+                <div class="grid-trajetoria">
+                    <div class="fotos-procedimento" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+                        <img src="./imagens/procedimento.jpeg" alt="procedimento">
+                    </div>
+                    <div class="fotos-procedimento-menor" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom">
+                        <img src="./imagens/david-cortando-cabelo.jpeg" alt="corte">
+                    </div>
+                    <div class="fotos-procedimento-menor" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <img src="./imagens/trajetoria-amigo-david.jpeg" alt="loja">
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
@@ -163,7 +182,7 @@
             <div class="divisao-rodape" id="nome-slogan">
                 <img src="./imagens/logo-oshiro-branca.png" alt="Logo Oshiro">
                 <div>
-                    <h4>Barbearia <span>OSHIRO</span></h4>
+                    <h4 id="logo-rodape">Barbearia <span>OSHIRO</span></h4>
                     <p>Beleza que reflete quem você é.</p>
                 </div>
             </div>
@@ -180,22 +199,22 @@
                         <p id="online-status"></p>
                     </div>
                 </div>
-                <div  class="container-horarios-redes">
+                <div class="container-horarios-redes">
                     <h4>Redes</h4>
                     <div id="redes">
                         <!-- ICONE WHATSAPP -->
                         <div class="rede">
                             <a class="link-redes" href="https://wa.me/5511947018631" target="_blank">
                                 <i class="bi bi-whatsapp"></i>
-                                &nbsp; (11) 9 4701-8631
+                                (11) 9 4701-8631
                             </a>
                         </div>
-                        
+
                         <!-- ICONE INSTAGRAM -->
                         <div class="rede">
                             <a class="link-redes" href="https://www.instagram.com/barbeariaoshiro/" target="_blank">
                                 <i class="bi bi-instagram"></i>
-                                &nbsp; @barbeariaoshiro
+                                @barbeariaoshiro
                             </a>
                         </div>
                     </div>
@@ -204,8 +223,7 @@
             <div class="divisao-rodape">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234224.26328735746!2d-46.95284591328125!3d-23.46933229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef76441cd40b7%3A0x81a10795d282b219!2sBarbearia%20tokyo%20cabeleireiros!5e0!3m2!1spt-BR!2sbr!4v1781699661440!5m2!1spt-BR!2sbr"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     class="mapa-rodape">
                 </iframe>
                 <button class="btn-rodape" onclick="window.location.href='./formulario.html'">
@@ -220,10 +238,13 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="header.js"></script>
     <script src="footer.js"></script>
 
     <!-- IMPORTAÇÃO DE BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
     <!-- IMPORTAÇÃO AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

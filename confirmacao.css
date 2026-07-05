@@ -1,0 +1,45 @@
+/* =========================
+   CONFIRMAÇÃO DE AGENDAMENTO
+========================= */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-footer);
+    color: var(--color-footer-text);
+}
+
+.box {
+    text-align: center;
+}
+
+.loader {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border: 5px solid var(--color-surface-soft);
+    border-top: 5px solid var(--color-brand);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.box h1 {
+    color: var(--color-brand);
+    font-size: 22px;
+}
+
+.box p {
+    color: var(--color-footer-text);
+    font-size: 14px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

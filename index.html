@@ -150,11 +150,11 @@
             <article id="container-feedback">
                 <h2>Feedbacks</h2>
                 <div id="container-cards">
-                <div class="card-feedback">
+                    <div id="card1" class="card-feedback card-feedback-left">
                         <img src="imagens/procedimento.jpeg" alt="Teste">
                         <div class="feedback-usuario">
                             <h4 class="feedback-nome">
-                                João Higuti
+                                João Higuti 1
                             </h4>
                             <p class="feedback-insta">
                                 @jp_higuti
@@ -171,11 +171,11 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nemo dolores, cupiditate veniam consectetur totam aliquid incidunt doloribus autem quidem minus suscipit officiis odio culpa eius est dolorem corporis ipsa!</p>
                         </div>
                     </div>
-                    <div class="card-feedback">
+                    <div id="card2" class="card-feedback card-feedback-center">
                         <img src="imagens/procedimento.jpeg" alt="Teste">
                         <div class="feedback-usuario">
                             <h4 class="feedback-nome">
-                                João Higuti
+                                João Higuti 2
                             </h4>
                             <p class="feedback-insta">
                                 @jp_higuti
@@ -191,12 +191,12 @@
                         <div class="feedback-mensagem">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nemo dolores, cupiditate veniam consectetur totam aliquid incidunt doloribus autem quidem minus suscipit officiis odio culpa eius est dolorem corporis ipsa!</p>
                         </div>
-                </div>
-                    <div class="card-feedback">
+                    </div>
+                    <div id="card3" class="card-feedback card-feedback-right">
                         <img src="imagens/procedimento.jpeg" alt="Teste">
                         <div class="feedback-usuario">
                             <h4 class="feedback-nome">
-                                João Higuti
+                                João Higuti 3
                             </h4>
                             <p class="feedback-insta">
                                 @jp_higuti
@@ -212,8 +212,17 @@
                         <div class="feedback-mensagem">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nemo dolores, cupiditate veniam consectetur totam aliquid incidunt doloribus autem quidem minus suscipit officiis odio culpa eius est dolorem corporis ipsa!</p>
                         </div>
+                    </div>
+                </div>  
+                
+                <div id="containter-buttons">
+                    <button id="anterior" class="carrosseu-feedback-button" onclick="antes()">
+                        <i class="bi bi-caret-left-fill"></i>
+                    </button>
+                    <button id="proximo" class="carrosseu-feedback-button" onclick="depois()">
+                        <i class="bi bi-caret-right-fill"></i>
+                    </button>
                 </div>
-                </div>    
             </article>
         </section>
     </main>
@@ -281,6 +290,8 @@
     <script src="main.js"></script>
     <script src="header.js"></script>
     <script src="footer.js"></script>
+
+    <script src="feedback.js" defer></script>
 
     <!-- IMPORTAÇÃO DE BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

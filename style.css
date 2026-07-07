@@ -218,6 +218,30 @@ h2 {
     background-color: var(--color-surface);
     padding-top: 70px;
     border-radius: 12px;
+    transition: all 1s ease;
+}
+
+.card-feedback-center {
+    top: auto;
+    left: 50%;
+    z-index: 50;
+    transform: translateX(-50%);
+}
+
+.card-feedback-left {
+    top: auto;
+    left: 0;
+    z-index: 20;
+    transform: scale(0.90);
+    filter: opacity(0.60);
+}
+
+.card-feedback-right {
+    top: auto;
+    right: 0;
+    z-index: 20;
+    transform: scale(0.90);
+    filter: opacity(0.50);
 }
 
 .card-feedback img {
@@ -247,6 +271,34 @@ h2 {
 }
 
 .feedback-mensagem {
+    color: var(--color-text);
+    height: 130px;
+}
+
+.feedback-mensagem p {
+    margin: 0;
+}
+
+#containter-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 30;
+}
+
+.carrosseu-feedback-button {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-btn-carroseu);
+}
+
+.carrosseu-feedback-button i {
     color: var(--color-text);
 }
 

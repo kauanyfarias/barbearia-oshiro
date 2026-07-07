@@ -42,6 +42,8 @@
     --color-hero: var(--preto-3);
     --color-hero-overlay: rgb(15 14 13 / 0.56);
 
+    --color-btn-carroseu: rgba(184, 184, 184, 0.72);
+
     --color-container: rgba(255, 255, 255, 0.8);
 
     --shadow-soft: 0 8px 24px rgb(15 14 13 / 0.12);
@@ -72,6 +74,8 @@
 
     --color-hero: var(--preto-3);
     --color-hero-overlay: rgb(15 14 13 / 0.72);
+
+    --color-btn-carroseu: rgba(83, 83, 83, 0.72);
 
     --color-container: rgba(0, 0, 0, 0.8);
 

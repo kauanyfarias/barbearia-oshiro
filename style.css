@@ -5,7 +5,7 @@ h2 {
 
 #chamada,
 #espaco,
-#sobre {
+#avaliacoes {
     max-width: 100vw;
     overflow-x: hidden;
 }
@@ -191,73 +191,63 @@ h2 {
     display: block;
 }
 
-#sobre {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+#avaliacoes {
+    background-color: var(--color-surface-soft);
     padding: 40px;
-    background: var(--color-surface-soft);
-}
-
-#container-sobre {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    min-height: 600px;
 }
 
-.texto-sobre {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
+#container-feedback {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
 }
 
-#sobre p {
-    max-width: 800px;
-    margin: 30px;
-    color: var(--color-text-soft);
-    font-size: 20px;
-    text-align: left;
+#container-cards {
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
 }
 
-.btn-sobre {
-    max-width: 80vw;
-    padding: 10px 16px;
-    margin: auto;
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-brand);
-    color: var(--color-brand-strong);
-    font-weight: 700;
-    transition: all 0.3s ease;
-}
-
-.btn-sobre:hover {
-    background-color: var(--color-brand);
-    color: var(--color-text-inverse);
-}
-
-.grid-trajetoria {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 15px;
+.card-feedback {
+    position: absolute;
     width: 50%;
-    overflow: hidden;
+    padding: 20px;
+    background-color: var(--color-surface);
+    padding-top: 70px;
     border-radius: 12px;
 }
 
-.fotos-procedimento {
-    grid-row: span 2;
-    overflow: hidden;
+.card-feedback img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid var(--color-surface);
 }
 
-.fotos-procedimento-menor {
-    overflow: hidden;
+.feedback-nome {
+    font-family: var(--font-titulo);
+    margin: 0;
+    line-height: 0.9rem;
+}
+
+.feedback-insta {
+    color: var(--color-brand-strong);
+}
+
+.container-stars {
+    color: var(--color-brand);
+    margin-bottom: 10px;
+}
+
+.feedback-mensagem {
+    color: var(--color-text);
 }
 
 @media (max-width: 890px) {

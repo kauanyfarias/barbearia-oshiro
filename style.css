@@ -238,9 +238,9 @@ h2 {
 
 .card-feedback-right {
     top: auto;
-    right: 0;
+    left: 100%;
     z-index: 20;
-    transform: scale(0.90);
+    transform: scale(0.90) translateX(-110%);
     filter: opacity(0.50);
 }
 
@@ -272,7 +272,6 @@ h2 {
 
 .feedback-mensagem {
     color: var(--color-text);
-    height: 130px;
 }
 
 .feedback-mensagem p {
@@ -287,7 +286,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    z-index: 30;
+    z-index: 80;
 }
 
 .carrosseu-feedback-button {
@@ -329,7 +328,7 @@ h2 {
 
     #chamada,
     #espaco,
-    #sobre {
+    #avaliacoes {
         padding: 20px;
     }
 
@@ -402,6 +401,44 @@ h2 {
         height: 400px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
+    }
+
+    .card-feedback {
+        width: 100%;
+    }
+
+    .card-feedback-center {
+        left: 0;
+        top: 250%;
+        transform: translateX(0px);
+    }
+
+    .card-feedback-left {
+        left: 0;
+        top: 100%;
+        transform: scale(0.90);
+    }
+
+    .card-feedback-right {
+        left: 0;
+        top: 350%;
+        transform: scale(0.90) translateX(0px);
+    }
+
+    #containter-buttons {
+        top: 30%;
+    }
+
+    .carrosseu-feedback-button {
+        width: 30px;
+    }
+
+    #anterior {
+        transform: rotate(90deg);
+    }
+
+    #proximo {
+        transform: rotate(90deg);
     }
 }
 

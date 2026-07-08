@@ -6,37 +6,40 @@ const card2 = document.getElementById("card2");
 const card3 = document.getElementById("card3");
 
 function antes() {
-    anterior.removeAttribute("onclick");
+    anterior.removeEventListener("click", antes);
 
     const classesCard1 = card1.classList.toString();
     const classesCard2 = card2.classList.toString();
     const classesCard3 = card3.classList.toString();
 
-    card1.classList = classesCard2;
-    card2.classList = classesCard3;
-    card3.classList = classesCard1;
+    card1.className = classesCard2;
+    card2.className = classesCard3;
+    card3.className = classesCard1;
 
     reativar = () => {
-        anterior.setAttribute("onclick", "antes()");
+        anterior.addEventListener("click", antes);
     };
 
-    setInterval(reativar, 1000);
+    setInterval(reativar(), 1000);
 }
 
 function depois() {
-    proximo.removeAttribute("onclick")
+    proximo.removeEventListener("click", depois);
 
     const classesCard1 = card1.classList.toString();
     const classesCard2 = card2.classList.toString();
     const classesCard3 = card3.classList.toString();
 
-    card1.classList = classesCard3;
-    card2.classList = classesCard1;
-    card3.classList = classesCard2;
+    card1.className = classesCard3;
+    card2.className = classesCard1;
+    card3.className = classesCard2;
 
     reativar = () => {
-        proximo.setAttribute("onclick", "depois()");
+        proximo.addEventListener("click", depois);
     };
 
-    setInterval(reativar, 1000);
+    setInterval(reativar(), 1000);
 }
+
+proximo.addEventListener("click", depois);
+anterior.addEventListener("click", antes);

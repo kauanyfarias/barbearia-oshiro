@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Confirmando Agendamento</title>
@@ -11,29 +12,29 @@
 <body>
 
 
-<div class="box">
-    <div class="loader"></div>
+    <div class="box">
+        <div class="loader"></div>
 
-    <h1>Confirmando seu agendamento...</h1>
-    <p>Aguarde, estamos te redirecionando para o WhatsApp</p>
-</div>
+        <h1>Confirmando seu agendamento...</h1>
+        <p>Aguarde, estamos te redirecionando para o WhatsApp</p>
+    </div>
 
 
-<script>
+    <script>
 
-    // PEGA OS DADOS SALVOS NO LOCALSTORAGE (É TIPO UM ARMAZENAMENTO NO DISPOSITIVO DA PESSOA)
-    const dados = JSON.parse(localStorage.getItem("agendamento"));
+        // PEGA OS DADOS SALVOS NO LOCALSTORAGE (É TIPO UM ARMAZENAMENTO NO DISPOSITIVO DA PESSOA)
+        const dados = JSON.parse(localStorage.getItem("agendamento"));
 
-    // SE NÃO EXISTIR DADOS, VOLTA PARA O FORMULÁRIO
-    if (!dados) {
-        window.location.href = "formulario.html";
-    }
+        // SE NÃO EXISTIR DADOS, VOLTA PARA O FORMULÁRIO
+        if (!dados) {
+            window.location.href = "formulario.html";
+        }
 
-    // NÚMERO DO WHATSAPP DO DAVID
-    const numero = "5511947018631";
+        // NÚMERO DO WHATSAPP DO DAVID
+        const numero = "5511947018631";
 
-    // MONTA A MENSAGEM QUE VAI NO WHATS
-    const mensagem = `NOVO AGENDAMENTO
+        // MONTA A MENSAGEM QUE VAI NO WHATS
+        const mensagem = `NOVO AGENDAMENTO
 
  Cliente: ${dados.nome}
  Telefone: ${dados.telefone}
@@ -42,20 +43,21 @@
  Data: ${dados.data}
  Horário: ${dados.horario}
 
-✔ Confirmar atendimento.`;
+Confirmar atendimento`;
 
-    // MONTA O LINK DO WHATSAPP COM A MENSAGEM CODIFICADA
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+        // MONTA O LINK DO WHATSAPP COM A MENSAGEM CODIFICADA
+        const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
-    // REMOVE OS DADOS DO LOCALSTORAGE (EVITA DUPLICAR AGENDAMENTO)
-    localStorage.removeItem("agendamento");
+        // REMOVE OS DADOS DO LOCALSTORAGE (EVITA DUPLICAR AGENDAMENTO)
+        localStorage.removeItem("agendamento");
 
-    // MANTÉM A TELA DE LOADING POR 2.0 SEGUNDOS ANTES DE REDIRECIONAR
-    setTimeout(() => {
-        window.location.href = url;
-    }, 2000);
+        // MANTÉM A TELA DE LOADING POR 2.0 SEGUNDOS ANTES DE REDIRECIONAR
+        setTimeout(() => {
+            window.location.href = url;
+        }, 2000);
 
-</script>
+    </script>
 
 </body>
+
 </html>

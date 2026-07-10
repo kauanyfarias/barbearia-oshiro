@@ -57,7 +57,7 @@ document.getElementById("agendar").addEventListener("click", () => {
     const servicoEl = document.querySelector(".card.ativo h3");
 
     // Pega a data 
-    const dataEl = document.querySelector(".datas .ativo"); 
+    const dataEl = document.querySelector(".datas .ativo");
 
     // Pega o horário 
     const horarioEl = document.querySelector(".horarios .ativo");

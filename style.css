@@ -196,7 +196,7 @@ h2 {
     padding: 40px;
     display: flex;
     justify-content: center;
-    min-height: 600px;
+    min-height: 500px;
 }
 
 #container-feedback {
@@ -266,12 +266,16 @@ h2 {
 }
 
 .container-stars {
-    color: var(--color-brand);
     margin-bottom: 10px;
+}
+
+.active-star {
+    color: var(--color-brand);
 }
 
 .feedback-mensagem {
     color: var(--color-text);
+    height: 120px;
 }
 
 .feedback-mensagem p {

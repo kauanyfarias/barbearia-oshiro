@@ -137,6 +137,7 @@ main {
 .datas button,
 .horarios button {
     padding: 12px 25px;
+    min-width: 125px;
     background: var(--color-surface);
     border: 1px solid var(--color-brand);
     color: var(--color-text);
@@ -175,4 +176,11 @@ main {
 
 #agendar:hover {
     background: var(--color-brand-strong);
+}
+
+@media (max-width: 768px) {
+    .horarios,
+    .datas {
+        justify-content: center;
+    }
 }

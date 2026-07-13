@@ -309,11 +309,9 @@ h2 {
     #pagina-inicial img {
         width: 50%;
     }
-
     #titulo-hero h1 {
         font-size: 80px;
     }
-
     #titulo-hero span {
         font-size: 30px;
     }
@@ -323,42 +321,34 @@ h2 {
     h2 {
         font-size: 25px;
     }
-
     #pagina-inicial {
         flex-direction: column;
         padding-top: 100px;
         text-align: center;
     }
-
     #chamada,
     #espaco,
     #avaliacoes {
         padding: 20px;
     }
-
     #galeria {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         gap: 5px;
     }
-
     .galeria-item {
         height: 300px;
     }
-
     .fotos-central {
         display: none;
     }
-
     #subtitulo-espaco p {
         text-align: center;
     }
-
     #fotos-localizacao {
         gap: 16px;
         flex-direction: column;
     }
-
     .grid-espaco {
         width: 100%;
         height: 600px;
@@ -366,81 +356,68 @@ h2 {
         grid-template-columns: auto;
         gap: 5px;
     }
-
     .foto-espaco {
         grid-row: span 1;
         grid-column: span 1;
     }
-
     .foto-espaco-menor {
         grid-column: span 1;
     }
-
-    #mapa { 
+    #mapa {
         width: 100%;
     }
-
     #mapa iframe {
         height: 250px;
     }
-
     #sobre {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
     }
-
     #sobre p {
         font-size: 16px;
         text-align: center;
         margin: 15px;
     }
-
     #container-sobre {
         flex-direction: column-reverse;
     }
-
     .grid-trajetoria {
         width: 100%;
         height: 400px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
-
+    #avaliacoes {
+        height: 650px;
+    }
     .card-feedback {
         width: 100%;
     }
-
     .card-feedback-center {
         left: 0;
         top: 250%;
         transform: translateX(0px);
     }
-
     .card-feedback-left {
         left: 0;
         top: 100%;
         transform: scale(0.90);
     }
-
     .card-feedback-right {
         left: 0;
         top: 350%;
         transform: scale(0.90) translateX(0px);
     }
-
     #containter-buttons {
         top: 30%;
     }
-
     .carrosseu-feedback-button {
         width: 30px;
     }
-
     #anterior {
         transform: rotate(90deg);
     }
-
     #proximo {
         transform: rotate(90deg);
     }
